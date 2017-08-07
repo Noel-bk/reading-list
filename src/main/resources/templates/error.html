@@ -1,0 +1,15 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Oops!</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<html>
+<div class="errorPage">
+    <span class="oops">Oops!</span><br/>
+    <img th:src="@{/images/doh.png}" style="width:420px;"/>
+    <p>There seems to be a problem with the page you requested
+        (<span th:text="${path}"></span>).</p>
+    <p th:text="${'Details: ' + message}"></p>
+</div>
+</html>
+</html>
